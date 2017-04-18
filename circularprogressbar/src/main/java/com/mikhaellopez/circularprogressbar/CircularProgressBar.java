@@ -71,7 +71,7 @@ public class CircularProgressBar extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawOval(rectF, backgroundPaint);
-        float angle = 360 * progress / 100;
+        float angle = 180 * progress / 100;
         canvas.drawArc(rectF, startAngle, angle, false, foregroundPaint);
     }
     //endregion
